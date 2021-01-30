@@ -17,7 +17,8 @@
       color: @Gadget-MenuHorizontal-FirstLevel-Color;
       display: inline-block;
       font: @Gadget-MenuHorizontal-FirstLevel-Font;
-      padding-right: 24px;
+      padding-right: 30px;
+      padding-left: 30px;
       position: relative;
       text-align: left;
       text-decoration: none;
@@ -46,13 +47,6 @@
   &:last-child,
   &.last-child // remove padding from last item
     {
-    > .item
-    {
-      > a
-      {
-        padding-right: 0;
-      }
-    }
 
     &.dir
     {
@@ -92,7 +86,11 @@
       {
         > a > span
         {
-          color:  @Gadget-MenuHorizontal-FirstLevel-Hover-Color;
+          color: @Gadget-MenuHorizontal-FirstLevel-Hover-Color;
+        }
+        > a:after
+        {
+          background: @Gadget-MenuHorizontal-FirstLevel-Dot-Hover-Color;
         }
       }
     }
@@ -123,7 +121,7 @@
       {
         > a:after
         {
-          background: @Gadget-MenuHorizontal-FirstLevel-Dot-Hover-Color;
+          // background: @Gadget-MenuHorizontal-FirstLevel-Dot-Hover-Color;
         }
       }
     }
