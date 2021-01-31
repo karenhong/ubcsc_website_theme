@@ -1,0 +1,17 @@
+.gadgetContentEditableArea > a.fill-div {
+    /* display: block; */
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    font-size: 300%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: -10px;
+    color: white;
+}
+
+.gadgetContentEditableArea > a:hover {
+    color: #76adbc;
+}
