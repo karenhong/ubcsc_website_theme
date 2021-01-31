@@ -56,9 +56,9 @@
 
 // Links
 @Typography-Link-Font: ~'normal 16px/normal Raleway';
-@Typography-Link-Color: #36aff0;
+@Typography-Link-Color: #76ADBC;
 @Typography-Link-Decoration: underline;
-@Typography-Link-Hover-Color: #1e7890;
+@Typography-Link-Hover-Color: darken(@Typography-Link-Color, 20%);
 @Typography-Link-Hover-Decoration: underline;
 @Typography-Link-Visited-Color: @Typography-Link-Color;
 @Typography-Link-Visited-Decoration: @Typography-Link-Decoration;
@@ -124,12 +124,12 @@
 @Link-Style002-Active-Bg: @Link-Style002-Bg;
 @Link-Style002-Active-Color: @Link-Style002-Color;
 
-@Link-Style003-Bg: #566d75;
+@Link-Style003-Bg: #76ADBC;
 @Link-Style003-Color: #fff;
-@Link-Style003-Hover-Bg: #44585f;
-@Link-Style003-Hover-Color: #fff;
+@Link-Style003-Hover-Bg: darken(@Link-Style003-Bg, 20%);
+@Link-Style003-Hover-Color: @Link-Style003-Bg;
 @Link-Style003-Active-Bg: @Link-Style003-Bg;
-@Link-Style003-Active-Color: #626262;
+@Link-Style003-Active-Color: @Link-Style003-Bg;
 
 @Link-Style004-Bg: #F3F2F3;
 @Link-Style004-Color: #333;
@@ -140,9 +140,9 @@
 
 
 // Functional button
-@FunctionButton-Bg: #2e4859;
+@FunctionButton-Bg: #1E1A29;
 @FunctionButton-Color: #fff;
-@FunctionButton-Hover-Bg: #192b37;
+@FunctionButton-Hover-Bg: darken(@FunctionButton-Bg, 20%);
 @FunctionButton-Hover-Color: @FunctionButton-Color;
 @FunctionButton-Active-Bg: @FunctionButton-Bg;
 @FunctionButton-Active-Color: @FunctionButton-Color;
@@ -368,14 +368,14 @@
 @Gadget-SecondaryMenu-StyleNone-Font: ~'normal 13px/normal Roboto Regular';
 @Gadget-SecondaryMenu-StyleNone-Link-Font: @Gadget-SecondaryMenu-StyleNone-Font;
 @Gadget-SecondaryMenu-StyleNone-Link-Color: #000;
-@Gadget-SecondaryMenu-StyleNone-Link-Hover-Color: #1e7890;
+@Gadget-SecondaryMenu-StyleNone-Link-Hover-Color: #1E1A29;
 @Gadget-SecondaryMenu-StyleNone-Separator-Color: #000;
 
 // Secondary menu ( gadgetStyle 1)
 @Gadget-SecondaryMenu-Style001-Font: ~'normal 16px/normal Raleway';
 @Gadget-SecondaryMenu-Style001-Link-Font: @Gadget-SecondaryMenu-Style001-Font;
 @Gadget-SecondaryMenu-Style001-Link-Color: #626262;
-@Gadget-SecondaryMenu-Style001-Link-Hover-Color: #1e7890;
+@Gadget-SecondaryMenu-Style001-Link-Hover-Color: #1E1A29;
 @Gadget-SecondaryMenu-Style001-Separator-Color: @Gadget-SecondaryMenu-Style001-Link-Color;
 @Gadget-SecondaryMenu-Style001-Separator-Content: "|";
 @Gadget-SecondaryMenu-Style001-Separator-Display: none;
@@ -396,14 +396,14 @@
 @Gadget-NavigationLinks-StyleNone-Font: ~'italic 16px/normal Raleway';
 @Gadget-NavigationLinks-StyleNone-Link-Font: @Gadget-NavigationLinks-StyleNone-Font;
 @Gadget-NavigationLinks-StyleNone-Link-Color: #000;
-@Gadget-NavigationLinks-StyleNone-Link-Hover-Color: #1e7890;
+@Gadget-NavigationLinks-StyleNone-Link-Hover-Color: #1E1A29;
 @Gadget-NavigationLinks-StyleNone-Separator-Color: #000;
 
 // Navigation links ( gadgetStyle 1)
 @Gadget-NavigationLinks-Style001-Font: ~'normal 16px/normal Raleway';
 @Gadget-NavigationLinks-Style001-Link-Font: @Gadget-NavigationLinks-Style001-Font;
 @Gadget-NavigationLinks-Style001-Link-Color: #9da1a3;
-@Gadget-NavigationLinks-Style001-Link-Hover-Color: #1e7890;
+@Gadget-NavigationLinks-Style001-Link-Hover-Color: #1E1A29;
 @Gadget-NavigationLinks-Style001-Separator-Color: @Gadget-NavigationLinks-Style001-Link-Color;
 
 
@@ -412,13 +412,13 @@
 @Gadget-SiteMap-StyleNone-Font: ~'italic 16px/normal Raleway';
 @Gadget-SiteMap-StyleNone-Link-Font: @Gadget-SiteMap-StyleNone-Font;
 @Gadget-SiteMap-StyleNone-Link-Color: #000;
-@Gadget-SiteMap-StyleNone-Link-Hover-Color: #1e7890;
+@Gadget-SiteMap-StyleNone-Link-Hover-Color: #1E1A29;
 
 // Site map ( gadgetStyle 1)
 @Gadget-SiteMap-Style001-Font: ~'normal 16px/normal Raleway';
 @Gadget-SiteMap-Style001-Link-Font: @Gadget-SiteMap-Style001-Font;
 @Gadget-SiteMap-Style001-Link-Color: #9da1a3;
-@Gadget-SiteMap-Style001-Link-Hover-Color: #1e7890;
+@Gadget-SiteMap-Style001-Link-Hover-Color: #1E1A29;
 
 
 /* ----- Shared info container ( used in forms ) ----- */
@@ -431,22 +431,22 @@
 /* ----- Shared forms ( used in different gadgets ) ----- */
 
 @Shared-Form-Label-Color: #333333;
-@Shared-Form-Label-Font: ~'italic 14px/normal Raleway';
+@Shared-Form-Label-Font: ~'italic 14px/Roboto Condensed';
 @Shared-Form-Field-Bg: transparent;
-@Shared-Form-Field-Border: #919191;
+@Shared-Form-Field-Border: #F5F5F4;
 @Shared-Form-Field-Font: ~'normal 14px/normal Raleway';
 @Shared-Form-Field-Color: #373737;
 @Shared-Form-Field-Disabled-Bg: #dedede;
 @Shared-Form-Section-Bg: transparent;
 @Shared-Form-Section-Color: inherit;
-@Shared-Form-Title-Color: #9da1a3;
+@Shared-Form-Title-Color: #F5F5F4;
 @Shared-Form-Title-Font: ~'normal 14px/normal Roboto Condensed';
 @Shared-Form-One-More-Font: ~'bold 15px/normal Raleway';
 @Shared-Form-One-More-Color: #9da1a3;
-@Shared-Form-One-More-Hover-Color: #1e7890;
-@Shared-Form-MandatorySymbol-Color: #ff0000;
+@Shared-Form-One-More-Hover-Color: #1E1A29;
+@Shared-Form-MandatorySymbol-Color: #FF3503;
 @Shared-Form-MandatorySymbol-Font: inherit;
-@Shared-Form-Title-Border-Color: #919191;
+@Shared-Form-Title-Border-Color: #FF3503;
 
 /* ---- Shared paging ( used in different gadgets )---- */
 
