@@ -70,7 +70,7 @@
 
         > span:after
         {
-          background-color: @Gadget-MenuHorizontal-FirstLevel-Selected-Line-Color;
+          background-color: @Gadget-MenuHorizontal-FirstLevel-Color;
           bottom: 3px;
           content: '';
           width: 4px;
@@ -87,10 +87,6 @@
         > a > span
         {
           color: @Gadget-MenuHorizontal-FirstLevel-Hover-Color;
-        }
-        > a:after
-        {
-          background: @Gadget-MenuHorizontal-FirstLevel-Dot-Hover-Color;
         }
       }
     }
@@ -115,14 +111,6 @@
         right: 14px;
         top: 24px;
         width: 0;
-      }
-
-      &:hover
-      {
-        > a:after
-        {
-          // background: @Gadget-MenuHorizontal-FirstLevel-Dot-Hover-Color;
-        }
       }
     }
   }
@@ -449,7 +437,7 @@
   /* ----- sticky state ----- */
   &.menuStyle001, &.menuStyle002, &.menuStyle003{
     .menuInner ul.firstLevel > li.sel > .item:hover > a > span::after{
-      background-color: @Gadget-MenuHorizontal-FirstLevel-Hover-Color;
+      background-color: @Gadget-MenuHorizontal-FirstLevel-Color;
     }
   }
 

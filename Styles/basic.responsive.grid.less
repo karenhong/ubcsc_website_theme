@@ -1,8 +1,8 @@
 @state2-minwidth: 600px;
-@state2-maxwidth: 959px;
+@state2-maxwidth: 100%;
 
 @state3-minwidth: 320px;
-@state3-maxwidth: 616px;
+@state3-maxwidth: 100%;
 
 @state4-minwidth: 1144px;
 
@@ -35,9 +35,9 @@
 /********************************************************************************************************************/
 
 // Container
-@media only screen and (min-width:@state2-minwidth) and (max-width:100%)
+@media only screen and (min-width:@state2-minwidth) and (max-width:@state2-maxwidth)
 {
-	.container_12 { margin-left: 0; margin-right: 0; width: 100%; max-width: 960px; min-width: 600px; }
+	.container_12 { margin-left: 0; margin-right: 0; width: 100%; max-width: 1200px; min-width: 600px; }
 	.s2_grid_12 { width: auto; }
 }
 
@@ -50,6 +50,6 @@
 // Container
 @media only screen and (max-width:@state3-maxwidth)
 {
-	.container_12 { margin-left: 0; margin-right: 0; width: 100%; max-width: 600px; min-width: 320px; display: block; }
-	.s3_grid_12 { width: auto; margin-left: 0; margin-right: 0; }
+	.container_12 { margin-left: auto; margin-right: auto; width: 100%; max-width: 600px; min-width: 320px; display: block; }
+	.s3_grid_12 { width: auto; margin-left: 5px; margin-right: 5px; }
 }
