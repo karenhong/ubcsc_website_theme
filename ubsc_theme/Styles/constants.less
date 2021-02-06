@@ -1,6 +1,16 @@
+/* ----- Theme Colours ----- */
+@Lightest: #ffffff;
+@Light-Primary: #F5F5F4;
+
+@Blue-Primary: #1E1A29;
+@Blue-2: #76ADBC;
+@Blue-3: #647C97;
+
+@Accent: #FF3503;
+@Darkest: #040305;
 /* ----- Layouts ----- */
 
-@Body-Bg-Color: #1E1A29;
+@Body-Bg-Color: @Blue-Primary;
 @Body-Bg-Image: none;
 @Body-Bg-Repeat: ~'no-repeat';
 @Body-Bg-Position: ~'center top';
@@ -8,10 +18,10 @@
 @Body-Bg-Attachment: ~'scroll';
 
 // Header
-@ZoneHeader-Outer-Bg: #FFFFFF;
-@ZoneHeader-Inner-Bg: none;
-@ZoneHeader1-Outer-Bg: #FFFFFF;
-@ZoneHeader1-Inner-Bg: none;
+@ZoneHeader-Outer-Bg: @Light-Primary;
+@ZoneHeader-Inner-Bg: @Light-Primary;
+@ZoneHeader1-Outer-Bg: @Light-Primary;
+@ZoneHeader1-Inner-Bg: @Light-Primary;
 
 // Content
 @ZoneContent-Inner-Bg: #FFFFFF;
@@ -25,7 +35,7 @@
 // WA branding
 @ZoneBranding-Outer-Bg: none;
 @ZoneBranding-Inner-Bg: none;
-@ZoneBranding-Text-Color: #FFFFFF;
+@ZoneBranding-Text-Color: @Light-Primary;
 .zonebrandingLinkColor{}
 
 // Turn on / off theme shadows (depends on theme)
@@ -34,39 +44,39 @@
 /* ----- Typography ----- */
 
 @Typography-Body-Font: ~'normal 16px/normal Raleway';
-@Typography-Body-Color: #040305;
-@Typography-Text-Alternative-Color: #fff;
+@Typography-Body-Color: @Darkest;
+@Typography-Text-Alternative-Color: @Lightest;
 
 // Titles & headers
 @Typography-Title-Font: ~'normal 60px/normal Roboto Thin';
-@Typography-Title-Color: #F5F5F4;
+@Typography-Title-Color: @Blue-Primary;
 @Typography-Title-Line-Color: @Typography-Title-Color;
 @Typography-PageTitle-Font: ~'normal 48px/1.05em Roboto Condensed';
-@Typography-PageTitle-Color: #1E1A29;
+@Typography-PageTitle-Color: @Blue-Primary;
 @Typography-Header1-Font: ~'normal 34px/normal Roboto Condensed';
-@Typography-Header1-Color: #1E1A29;
+@Typography-Header1-Color: @Blue-Primary;
 @Typography-Header2-Font: ~'bold 34px/normal Roboto Condensed';
-@Typography-Header2-Color: #1E1A29;
+@Typography-Header2-Color: @Blue-Primary;
 @Typography-Header2-Line-Color: #d1d1d1;
 @Typography-Header3-Font: ~'normal 26px/normal Roboto Condensed';
-@Typography-Header3-Color: #1E1A29;
+@Typography-Header3-Color: @Blue-Primary;
 @Typography-Header4-Font: ~'normal 26px/normal Roboto Condensed';
-@Typography-Header4-Color: #1E1A29;
-@Typography-Header-Alternative-Color: #1E1A29;
+@Typography-Header4-Color: @Blue-Primary;
+@Typography-Header-Alternative-Color: @Blue-Primary;
 
 // Links
 @Typography-Link-Font: ~'normal 16px/normal Raleway';
 @Typography-Link-Color: #76ADBC;
 @Typography-Link-Decoration: underline;
-@Typography-Link-Hover-Color: #647C97;
+@Typography-Link-Hover-Color: @Blue-3;
 @Typography-Link-Hover-Decoration: underline;
 @Typography-Link-Visited-Color: @Typography-Link-Color;
 @Typography-Link-Visited-Decoration: @Typography-Link-Decoration;
 
 @Typography-Link-Alternative-Weight: bold;
-@Typography-Link-Alternative-Color: #76ADBC;
+@Typography-Link-Alternative-Color: @Blue-2;
 @Typography-Link-Alternative-Decoration: underline;
-@Typography-Link-Alternative-Hover-Color: #F5F5F4;
+@Typography-Link-Alternative-Hover-Color: @Light-Primary;
 @Typography-Link-Alternative-Hover-Decoration: underline;
 @Typography-Link-Alternative-Visited-Color: @Typography-Link-Alternative-Color;
 @Typography-Link-Alternative-Visited-Decoration: @Typography-Link-Decoration;
@@ -75,13 +85,13 @@
 @Typography-Link-Auxiliary-Style: italic;
 @Typography-Link-Auxiliary-Color: #36aff0;
 @Typography-Link-Auxiliary-Decoration: underline;
-@Typography-Link-Auxiliary-Hover-Color: #76ADBC;
+@Typography-Link-Auxiliary-Hover-Color: @Blue-2;
 @Typography-Link-Auxiliary-Hover-Decoration: underline;
 @Typography-Link-Auxiliary-Visited-Color: @Typography-Link-Auxiliary-Color;
 @Typography-Link-Auxiliary-Visited-Decoration: @Typography-Link-Auxiliary-Decoration;
 
 @Typography-Link-WhiteBG-Color: #9da1a3;
-@Typography-Link-WhiteBG-Hover-Color: #1E1A29;
+@Typography-Link-WhiteBG-Hover-Color: @Blue-Primary;
 
 
 // Quoted text
@@ -110,26 +120,26 @@
 
 
 // Link styles
-@Link-Style001-Bg: #FF3503;
+@Link-Style001-Bg: @Accent;
 @Link-Style001-Color: #fff;
 @Link-Style001-Hover-Bg: darken(@Link-Style001-Bg, 20%);
 @Link-Style001-Hover-Color: @Link-Style001-Color;
 @Link-Style001-Active-Bg: @Link-Style001-Bg;
 @Link-Style001-Active-Color: @Link-Style001-Color;
 
-@Link-Style002-Bg: #1E1A29;
+@Link-Style002-Bg: @Blue-Primary;
 @Link-Style002-Color: #fff;
 @Link-Style002-Hover-Bg: darken(@Link-Style002-Bg, 20%);
 @Link-Style002-Hover-Color: @Link-Style002-Color;
 @Link-Style002-Active-Bg: @Link-Style002-Bg;
 @Link-Style002-Active-Color: @Link-Style002-Color;
 
-@Link-Style003-Bg: #76ADBC;
+@Link-Style003-Bg: @Blue-2;
 @Link-Style003-Color: #fff;
 @Link-Style003-Hover-Bg: darken(@Link-Style003-Bg, 20%);
-@Link-Style003-Hover-Color: @Link-Style003-Bg;
+@Link-Style003-Hover-Color: @Link-Style003-Color;
 @Link-Style003-Active-Bg: @Link-Style003-Bg;
-@Link-Style003-Active-Color: @Link-Style003-Bg;
+@Link-Style003-Active-Color: @Link-Style003-Color;
 
 @Link-Style004-Bg: #F3F2F3;
 @Link-Style004-Color: #333;
@@ -140,7 +150,7 @@
 
 
 // Functional button
-@FunctionButton-Bg: #1E1A29;
+@FunctionButton-Bg: @Blue-Primary;
 @FunctionButton-Color: #fff;
 @FunctionButton-Hover-Bg: darken(@FunctionButton-Bg, 20%);
 @FunctionButton-Hover-Color: @FunctionButton-Color;
@@ -212,16 +222,16 @@
 
 @Gadget-ForumSummary-Thread-Link-Font: ~'bold 15px/normal Raleway';
 @Gadget-ForumSummary-Thread-Link-Color: #a39d9d;
-@Gadget-ForumSummary-Thread-Link-Hover-Color: #76ADBC;
+@Gadget-ForumSummary-Thread-Link-Hover-Color: @Blue-2;
 @Gadget-ForumSummary-Description-Font: ~'italic 12px/normal Raleway';
 @Gadget-ForumSummary-Description-Color: #b5bac2;
 @Gadget-ForumSummary-LastMessage-Date-Link-Font: ~'bold 13px/normal Raleway';
 @Gadget-ForumSummary-LastMessage-Date-Link-Color: #a39d9d;
-@Gadget-ForumSummary-LastMessage-Date-Link-Hover-Color: #76ADBC;
+@Gadget-ForumSummary-LastMessage-Date-Link-Hover-Color: @Blue-2;
 @Gadget-ForumSummary-LastMessage-Name-Font: ~'normal 13px/normal Raleway';
 @Gadget-ForumSummary-LastMessage-Name-Color: #a39d9d;
 @Gadget-ForumSummary-LastMessage-Topics-Replies-Font: ~'normal 13px/normal Raleway';
-@Gadget-ForumSummary-LastMessage-Topics-Replies-Color: #F5F5F4;
+@Gadget-ForumSummary-LastMessage-Topics-Replies-Color: @Light-Primary;
 @Gadget-ForumSummary-Icon-Color: #a39d9d;
 @Gadget-ForumSummary-Icon-Font: ~'normal 20px/normal WA-theme-icons';
 
@@ -233,7 +243,7 @@
 
 @Gadget-Member-Directory-Primary-Link-Font: ~'bold 15px/normal Raleway';
 @Gadget-Member-Directory-Primary-Link-Color: #9da1a3;
-@Gadget-Member-Directory-Primary-Link-Hover-Color: #76ADBC;
+@Gadget-Member-Directory-Primary-Link-Hover-Color: @Blue-2;
 
 @Gadget-Member-Directory-Secondary-Link-Font: ~'italic 16px/normal Raleway';
 @Gadget-Member-Directory-Secondary-Link-Color: #9da1a3;
@@ -265,7 +275,7 @@
 @Gadget-Events-Registrants-Guest-Link-Font: ~'bold 15px/normal Raleway';
 @Gadget-Events-Calendar-Date-Color: inherit;
 @Gadget-Events-Calendar-Date-Font: ~'normal 16px/normal Raleway';
-@Gadget-Events-Calendar-Current-Date-Color: #1E1A29;
+@Gadget-Events-Calendar-Current-Date-Color: @Blue-Primary;
 @Gadget-Events-Calendar-ViewTypeMonth-Header-Bg: transparent;
 @Gadget-Events-Calendar-ViewTypeMonth-Header-Font: ~'normal 16px/normal Raleway';
 @Gadget-Events-Calendar-ViewTypeMonth-Header-Color: inherit;
@@ -276,7 +286,7 @@
 @Gadget-Events-Calendar-ViewTypeYear-Header-Bg: transparent;
 @Gadget-Events-Calendar-ViewTypeYear-Header-Color: @Gadget-Events-Calendar-ViewTypeMonth-Header-Color;
 @Gadget-Events-Calendar-ViewTypeYear-Header-Font: ~'100 22px/normal Roboto Condensed';
-@Gadget-Events-Calendar-ViewTypeYear-Header-Hover-Color: #76ADBC;
+@Gadget-Events-Calendar-ViewTypeYear-Header-Hover-Color: @Blue-2;
 @Gadget-Events-Calendar-ViewTypeYear-Event-Font: ~'normal 14px/normal Roboto Condensed';
 @Gadget-Events-Calendar-ViewTypeWeek-Header-Color: inherit;
 @Gadget-Events-Calendar-ViewTypeWeek-Header-Font: ~'normal 22px/normal Raleway';
@@ -289,30 +299,30 @@
 @Gadget-MenuHorizontal-Border-Bottom: transparent;
 @Gadget-MenuHorizontal-FirstLevel-Bg: #ffffff;
 @Gadget-MenuHorizontal-FirstLevel-Font: ~'normal 18px/normal Roboto Condensed';
-@Gadget-MenuHorizontal-FirstLevel-Color: #1E1A29;
+@Gadget-MenuHorizontal-FirstLevel-Color: @Blue-Primary;
 @Gadget-MenuHorizontal-FirstLevel-TextShadow: none;
-@Gadget-MenuHorizontal-FirstLevel-Dot-Color: #FF3503;
-@Gadget-MenuHorizontal-FirstLevel-Dot-Hover-Color: #FF3503;
+@Gadget-MenuHorizontal-FirstLevel-Dot-Color: @Accent;
+@Gadget-MenuHorizontal-FirstLevel-Dot-Hover-Color: @Accent;
 @Gadget-MenuHorizontal-FirstLevel-Hover-Bg: @Gadget-MenuHorizontal-FirstLevel-Color;
-@Gadget-MenuHorizontal-FirstLevel-Hover-Color: #FF3503;
+@Gadget-MenuHorizontal-FirstLevel-Hover-Color: @Accent;
 @Gadget-MenuHorizontal-FirstLevel-Line-Color: transparent;
 @Gadget-MenuHorizontal-FirstLevel-Selected-Line-Color: transparent;
 @Gadget-MenuHorizontal-FirstLevel-Hover-PhantomElement-Size: ~'normal 32px/22px Roboto Condensed';
 
 
-@Gadget-MenuHorizontal-SubLevel-Bg: #1E1A29;
+@Gadget-MenuHorizontal-SubLevel-Bg: @Blue-Primary;
 @Gadget-MenuHorizontal-SubLevel-Font: ~'normal 16px/normal Roboto Condensed';
 @Gadget-MenuHorizontal-SubLevel-Color: #ffffff;
 @Gadget-MenuHorizontal-SubLevel-TextShadow: @Gadget-MenuHorizontal-FirstLevel-TextShadow;
-@Gadget-MenuHorizontal-SubLevel-Hover-Bg: #1E1A29;
-@Gadget-MenuHorizontal-SubLevel-Hover-Color: #FF3503;
-@Gadget-MenuHorizontal-SubLevel-Selected-Line-Color: #FF3503;
+@Gadget-MenuHorizontal-SubLevel-Hover-Bg: @Blue-Primary;
+@Gadget-MenuHorizontal-SubLevel-Hover-Color: @Accent;
+@Gadget-MenuHorizontal-SubLevel-Selected-Line-Color: @Accent;
 @Gadget-MenuHorizontal-SubLevel-Dot-Color: transparent;
 @Gadget-MenuHorizontal-SubLevel-Dot-Hover-Color: transparent;
 @Gadget-MenuHorizontal-Style-Hover-PhantomElement-Size: ~'normal 32px/22px Roboto Condensed';
 
 
-@Gadget-MenuHorizontal-GadgetStyle002-FirstLevel-Color: #1E1A29;
+@Gadget-MenuHorizontal-GadgetStyle002-FirstLevel-Color: @Blue-Primary;
 
 /* ----- Gadget Menu vertical ----- */
 
@@ -368,14 +378,14 @@
 @Gadget-SecondaryMenu-StyleNone-Font: ~'normal 13px/normal Roboto Regular';
 @Gadget-SecondaryMenu-StyleNone-Link-Font: @Gadget-SecondaryMenu-StyleNone-Font;
 @Gadget-SecondaryMenu-StyleNone-Link-Color: #000;
-@Gadget-SecondaryMenu-StyleNone-Link-Hover-Color: #1E1A29;
+@Gadget-SecondaryMenu-StyleNone-Link-Hover-Color: @Blue-Primary;
 @Gadget-SecondaryMenu-StyleNone-Separator-Color: #000;
 
 // Secondary menu ( gadgetStyle 1)
 @Gadget-SecondaryMenu-Style001-Font: ~'normal 16px/normal Raleway';
 @Gadget-SecondaryMenu-Style001-Link-Font: @Gadget-SecondaryMenu-Style001-Font;
 @Gadget-SecondaryMenu-Style001-Link-Color: #626262;
-@Gadget-SecondaryMenu-Style001-Link-Hover-Color: #1E1A29;
+@Gadget-SecondaryMenu-Style001-Link-Hover-Color: @Blue-Primary;
 @Gadget-SecondaryMenu-Style001-Separator-Color: @Gadget-SecondaryMenu-Style001-Link-Color;
 @Gadget-SecondaryMenu-Style001-Separator-Content: "|";
 @Gadget-SecondaryMenu-Style001-Separator-Display: none;
@@ -396,14 +406,14 @@
 @Gadget-NavigationLinks-StyleNone-Font: ~'italic 16px/normal Raleway';
 @Gadget-NavigationLinks-StyleNone-Link-Font: @Gadget-NavigationLinks-StyleNone-Font;
 @Gadget-NavigationLinks-StyleNone-Link-Color: #000;
-@Gadget-NavigationLinks-StyleNone-Link-Hover-Color: #1E1A29;
+@Gadget-NavigationLinks-StyleNone-Link-Hover-Color: @Blue-Primary;
 @Gadget-NavigationLinks-StyleNone-Separator-Color: #000;
 
 // Navigation links ( gadgetStyle 1)
 @Gadget-NavigationLinks-Style001-Font: ~'normal 16px/normal Raleway';
 @Gadget-NavigationLinks-Style001-Link-Font: @Gadget-NavigationLinks-Style001-Font;
 @Gadget-NavigationLinks-Style001-Link-Color: #9da1a3;
-@Gadget-NavigationLinks-Style001-Link-Hover-Color: #1E1A29;
+@Gadget-NavigationLinks-Style001-Link-Hover-Color: @Blue-Primary;
 @Gadget-NavigationLinks-Style001-Separator-Color: @Gadget-NavigationLinks-Style001-Link-Color;
 
 
@@ -412,13 +422,13 @@
 @Gadget-SiteMap-StyleNone-Font: ~'italic 16px/normal Raleway';
 @Gadget-SiteMap-StyleNone-Link-Font: @Gadget-SiteMap-StyleNone-Font;
 @Gadget-SiteMap-StyleNone-Link-Color: #000;
-@Gadget-SiteMap-StyleNone-Link-Hover-Color: #1E1A29;
+@Gadget-SiteMap-StyleNone-Link-Hover-Color: @Blue-Primary;
 
 // Site map ( gadgetStyle 1)
 @Gadget-SiteMap-Style001-Font: ~'normal 16px/normal Raleway';
 @Gadget-SiteMap-Style001-Link-Font: @Gadget-SiteMap-Style001-Font;
 @Gadget-SiteMap-Style001-Link-Color: #9da1a3;
-@Gadget-SiteMap-Style001-Link-Hover-Color: #1E1A29;
+@Gadget-SiteMap-Style001-Link-Hover-Color: @Blue-Primary;
 
 
 /* ----- Shared info container ( used in forms ) ----- */
@@ -439,26 +449,26 @@
 @Shared-Form-Field-Disabled-Bg: #dedede;
 @Shared-Form-Section-Bg: transparent;
 @Shared-Form-Section-Color: inherit;
-@Shared-Form-Title-Color: #1E1A29;
+@Shared-Form-Title-Color: @Blue-Primary;
 @Shared-Form-Title-Font: ~'normal 14px/normal Roboto Condensed';
 @Shared-Form-One-More-Font: ~'bold 15px/normal Raleway';
 @Shared-Form-One-More-Color: #9da1a3;
-@Shared-Form-One-More-Hover-Color: #1E1A29;
-@Shared-Form-MandatorySymbol-Color: #FF3503;
+@Shared-Form-One-More-Hover-Color: @Blue-Primary;
+@Shared-Form-MandatorySymbol-Color: @Accent;
 @Shared-Form-MandatorySymbol-Font: inherit;
-@Shared-Form-Title-Border-Color: #FF3503;
+@Shared-Form-Title-Border-Color: @Accent;
 
 /* ---- Shared paging ( used in different gadgets )---- */
 
 @Shared-Paging-Link-Font: ~'normal 15px/normal Raleway';
 @Shared-Paging-Link-Color: #333;
-@Shared-Paging-Link-Hover-Color: #1E1A29;
-@Shared-Paging-Link-Hover-Bg: #76ADBC;
+@Shared-Paging-Link-Hover-Color: @Blue-Primary;
+@Shared-Paging-Link-Hover-Bg: @Blue-2;
 @Sharing-Paging-Link-Current-Bg: #949494;
-@Shared-Paging-Link-Current-Color: #1E1A29;
+@Shared-Paging-Link-Current-Color: @Blue-Primary;
 @Shared-Paging-Arrows-Font: ~'normal 20px/normal FontAwesome';
 @Shared-Paging-Arrows-Color: #949494;
-@Shared-Paging-Arrows-Hover-Color: #FF3503;
+@Shared-Paging-Arrows-Hover-Color: @Accent;
 
 /* ---- Shared icons ---- */
 
@@ -479,7 +489,7 @@
 
 // Gadget style default "normal"
 @StyleWrapper-StyleNone-Title-Font: ~'24px/normal Raleway';
-@StyleWrapper-StyleNone-Title-Color: #1E1A29;
+@StyleWrapper-StyleNone-Title-Color: @Blue-Primary;
 
 // Gadget style default adaptive state 3
 @StyleWrapper-StyleNone-Adaptive-State3-Title-Font: ~'bold 20px/normal Raleway';
@@ -516,7 +526,7 @@
 
 //Gadget style 001
 @Gadget-SocialProfile-Style001-Font: ~'normal 22px/normal FontAwesome';
-@Gadget-SocialProfile-Style001-Color: #1E1A29;
+@Gadget-SocialProfile-Style001-Color: @Blue-Primary;
 @Gadget-SocialProfile-Style001-Border-Color: #6d7173;
 @Gadget-SocialProfile-Style001-Bg: rgba(0,0,0,0.7);
 @Gadget-SocialProfile-Style001-Hover-Color: #fff;
@@ -557,7 +567,7 @@
 @Gadget-PhotoAlbum-StyleNone-AlbumName-Font: ~'bold 16px/normal Raleway';
 @Gadget-PhotoAlbum-StyleNone-Aux-Link-Font: ~'italic 16px/normal Raleway';
 @Gadget-PhotoAlbum-StyleNone-Aux-Link-Color: #9da1a3;
-@Gadget-PhotoAlbum-StyleNone-Aux-Link-Hover-Color: #FF3503;
+@Gadget-PhotoAlbum-StyleNone-Aux-Link-Hover-Color: @Accent;
 
 // Gadget style 001
 @Gadget-PhotoAlbum-Style001-Photo-Bg: @Gadget-PhotoAlbum-StyleNone-Photo-Bg;
@@ -570,7 +580,7 @@
 /* ---- Gadget Slide show ---- */
 
 @Gadget-SlideShow-Arrow-Color: #fff;
-@Gadget-SlideShow-Arrow-Hover-Color: #FF3503;
+@Gadget-SlideShow-Arrow-Hover-Color: @Accent;
 @Gadget-SlideShow-Arrow-Font: ~'normal 55px/normal FontAwesome';
 @Gadget-SlidesShow-Navigation-Bg: none;
 @Gadget-SlideShow-Radio-Border-Color: #989898;
@@ -595,16 +605,16 @@
 
 // Login button
 @Gadget-Login-Icon-Font: ~'normal 10px/normal WA-theme-icons';
-@Gadget-Login-Button-Color: #F5F5F4;
+@Gadget-Login-Button-Color: @Light-Primary;
 @Gadget-Login-Button-Font: ~'normal 13px/normal Raleway';
 @Gadget-Login-Button-Opacity: 100;
 @Gadget-Login-Icon-Background-Color: transparent;
-@Gadget-Login-Icon-Color: #F5F5F4;
+@Gadget-Login-Icon-Color: @Light-Primary;
 
 @Gadget-Login-Button-Style001-Color: #fff;
 
 @Gadget-Login-Button-OnClick-Bg: transparent;
-@Gadget-Login-Button-OnClick-Color: #F5F5F4;
+@Gadget-Login-Button-OnClick-Color: @Light-Primary;
 @Gadget-Login-Button-OnClick-Opacity: 100;
 
 // Login form
